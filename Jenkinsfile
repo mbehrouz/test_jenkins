@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
           sh "printenv | sort"
-          sh "ls -la"
+          sh 'bash $WORKSPACE/build/build.sh'
       }
     }
 
