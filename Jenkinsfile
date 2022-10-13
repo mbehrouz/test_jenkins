@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        build 'SampleBuildJob'
+          sh "printenv | sort"
+          sh "ls -la"
       }
     }
 
